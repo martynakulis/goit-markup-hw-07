@@ -30,7 +30,7 @@
           </nav>
           <ul class="contact style">
             <li class="contact__item">
-              <a href="/" class="contact__link">
+              <a href="/" class="contact__link link">
                 <div class="contact__icon-box">
                   <svg class="contact__icon contact__icon--envelope">
                     <use href="images/icons.svg#icon-envelope"></use>
@@ -40,7 +40,7 @@
               </a>
             </li>
             <li class="contact__item">
-              <a href="/" class="contact__link">
+              <a href="/" class="contact__link link">
                 <div class="contact__icon-box">
                   <svg class="contact__icon contact__icon--smartphone">
                     <use href="images/icons.svg#icon-smartphone"></use>
@@ -54,57 +54,57 @@
       </div>
         <ul class="heading style">
           <li>
-            <h1 class="heading-title">efektywne rozwiązania </br> dla naszego biznesu</h1>
+            <h1 class="heading__title">efektywne rozwiązania </br> dla naszego biznesu</h1>
           </li>
           <li>
-            <button type="button" class="service" data-modal-open>Zamów usługę</button>
+            <button type="button" class="heading__button button" data-modal-open><span class="button__text">Zamów usługę</span></button>
             <div class="backdrop is-hidden" data-modal>
-              <div class="modal">
-                <button type="button" class="backdrop-close" data-modal-close>X</button>
-                <div>
-                  <h2 class="form-title">Zostaw swoje dane w formularzu poniżej</h2>
+              <div class="backdrop__modal">
+                <button type="button" class="backdrop__close" data-modal-close>X</button>
+                <div class="form">
+                  <h2 class="form__title">Zostaw swoje dane w formularzu poniżej</h2>
                   <form>
-                    <ul class="style form-list">
-                      <li class="form-list-item">
-                        <label class="form-text" for="name">Imie</label>
-                        <input class="text-box" type="text" name="name" id="name"/>
-                        <svg class="form-icon person">
+                    <ul class="style form__objects">
+                      <li class="form__object form-object">
+                        <label class="form-object__text" for="name">Imie</label>
+                        <input class="form-object__box" type="text" name="name" id="name"/>
+                        <svg class="form-object__icon form-object__icon--person">
                           <use href="images/icons.svg#icon-person"></use>
                         </svg>
                       </li>
-                      <li class="form-list-item">
-                        <label class="form-text" for="phone-number">Telefon</label>
-                        <input class="text-box" type="tel" name="phone-number" id="phone-number"/>
-                        <svg class="form-icon phone">
+                      <li class="form__object form-object">
+                        <label class="form-object__text" for="phone-number">Telefon</label>
+                        <input class="form-object__box" type="tel" name="phone-number" id="phone-number"/>
+                        <svg class="form-object__icon form-object__icon--phone">
                           <use href="images/icons.svg#icon-phone"></use>
                         </svg>
                       </li>
-                      <li class="form-list-item">
-                        <label class="form-text" for="email">Email</label>
-                        <input class="text-box" type="email" name="email" id="email"/>
-                        <svg class="form-icon email">
+                      <li class="form__object form-object">
+                        <label class="form-object__text" for="email">Email</label>
+                        <input class="form-object__box" type="email" name="email" id="email"/>
+                        <svg class="form-object__icon form-object__icon--email">
                           <use href="images/icons.svg#icon-email"></use>
                         </svg> 
                       </li>
-                      <li class="form-list-item">
-                        <label class="form-text" for="comment">Komentarz</label>
-                        <textarea class="comment-area" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
+                      <li class="form__object form-object">
+                        <label class="form-object__text" for="comment">Komentarz</label>
+                        <textarea class="form-object__comment-area" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
                       </li>
                       <li>
-                        <div class="acceptation-item">
-                         <svg class="acceptation-icon">
+                        <div class="form__item form-item">
+                         <!--<svg class="acceptation-icon">
                               <use href="./images/icons.svg#icon-checked"></use>
-                            </svg>
-                          <input class="form-policy" type="checkbox" name="user-policy" value="user-policy" id="user-policy"/>
-                          <label class="form-policy-text" for="user-policy">
-                            <span class="acceptation-item-text">Oświadczam iż akceptuję 
-                              <a class="form-link" href="/">Regulamin</a>
+                            </svg> -->
+                          <input class="form-item__policy" type="checkbox" name="user-policy" value="user-policy" id="user-policy"/>
+                          <label class="form-item__text acceptation-text" for="user-policy">
+                            <span class="acceptation-text__item">Oświadczam iż akceptuję 
+                              <a class="acceptation-text__link" href="/">Regulamin</a>
                                i 
-                               <a class="form-link" href="/">Politykę Prywatności.</a></span></label>
+                               <a class="acceptation-text__link" href="/">Politykę Prywatności.</a></span></label>
                         </div>
                       </li>
                       <li>
-                        <button class="form-accept" type="submit">Wyślij</button>
+                        <button class="form__button button" type="submit"><span class="button__text">Wyślij</span></button>
                       </li>
                     </ul>
                   </form>
@@ -484,15 +484,15 @@
                     </li>
                   </ul>
         </section>
-        <section class="footer-newsletter">
-          <h4 class="newsletter-title">Zapisz się do newslettera</h4>
+        <section class="newsletter">
+          <h4 class="newsletter__title">Zapisz się do newslettera</h4>
           <form>
             <label>
-              <input type="e-mail" name="e-mail" placeholder="E-mail" class="email-newsletter" />
+              <input type="e-mail" name="e-mail" placeholder="E-mail" class="newsletter__email" />
             </label>
-            <button type="submit" class="newsletter-button">
-              <span class="newsletter-button-text">Zapisz się</span>
-              <svg class="newsletter-icon">
+            <button type="submit" class="newsletter__button button">
+              <span class="button__text button__text--newsletter">Zapisz się</span>
+              <svg class="newsletter__icon">
                 <use href="images/icons.svg#icon-send"></use>
               </svg>
             </button>
