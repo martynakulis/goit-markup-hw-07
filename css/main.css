@@ -348,7 +348,6 @@ img {
   display: flex;
   align-items: center;
 }
-
 .form-item__text::before {
   display: inline-block;
   content: "";
@@ -358,6 +357,9 @@ img {
   border-radius: 2px;
   margin-right: 7px;
   z-index: -1;
+}
+.form-item__policy {
+  appearance: none;
 }
 
 .form-item__policy:checked + .form-item__text::before {
@@ -369,17 +371,12 @@ img {
   background-size: 11px 8px;
 }
 
-.form-item__policy {
-  appearance: none;
-}
-
 .acceptation-text__item {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
 }
-
 .acceptation-text__link {
   font-size: 14px;
   line-height: 24px;

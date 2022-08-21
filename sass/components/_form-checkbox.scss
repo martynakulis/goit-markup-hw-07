@@ -3,16 +3,19 @@
   margin-left: 52px;
   display: flex;
   align-items: center;
-}
-.form-item__text::before {
-  display: inline-block;
-  content: '';
-  width: 16px;
-  height: 16px;
-  outline: 1px solid #000000;
-  border-radius: 2px;
-  margin-right: 7px;
-  z-index: -1;
+  &__text::before {
+    display: inline-block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    outline: 1px solid #000000;
+    border-radius: 2px;
+    margin-right: 7px;
+    z-index: -1;
+  }
+  &__policy {
+    appearance: none;
+  }
 }
 
 .form-item__policy:checked + .form-item__text::before {
@@ -23,18 +26,17 @@
   background-position: 3px 4px;
   background-size: 11px 8px;
 }
-.form-item__policy {
-  appearance: none;
-}
-.acceptation-text__item {
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: $contactColor;
-}
-.acceptation-text__link {
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: $activeColor;
+.acceptation-text {
+  &__item {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $contactColor;
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $activeColor;
+  }
 }
