@@ -18,28 +18,30 @@
   }
 }
 
-.icons-grid__item {
-  flex-basis: calc((100% - 30px) / 4);
-}
-.grid-item__icon-box {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: $footerIconBoxColor;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: $activeColor;
+.icons-grid {
+  &__item {
+    flex-basis: calc((100% - 30px) / 4);
   }
-}
+  &__icon-box {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $footerIconBoxColor;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: $activeColor;
+    }
+  }
 
-.grid-item__icon {
-  width: 20px;
-  height: 20px;
-  fill: $footerIconColor;
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: $footerIconColor;
+  }
 }

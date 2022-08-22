@@ -7,9 +7,9 @@
     gap: 30px;
     padding-bottom: 94px;
   }
-}
-.team-content__item {
-  flex-basis: calc((100% - 90px) / 4);
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .team-box {
   width: 270px;
